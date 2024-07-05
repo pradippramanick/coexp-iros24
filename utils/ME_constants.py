@@ -1,4 +1,4 @@
-root_dir = '/media/pradip/data/PycharmProjects/reflect/reflect/main/'
+root_dir = '/PATH_TO_YOUR_ROOT_DIR/'
 thor_task_dir = root_dir + 'thor_tasks'
 state_summary_dir = root_dir + 'state_summary'
 action_prefix = 'Robot attempts to '

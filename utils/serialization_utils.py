@@ -37,7 +37,7 @@ def get_local_minimal_sg(idx, local_sg_dir):
     if os.path.exists(path):
         sg = renamed_load(open(path, 'rb'))
     else:
-        # Back off to idx, because of the inconsistent formats in Reflect
+        # Back off to idx, because of the inconsistent numbering formats in Reflect
         path = os.path.join(local_sg_dir, 'local_sg_' + str(idx) + '.pkl')
         if os.path.exists(path):
             sg = renamed_load(open(path, 'rb'))
