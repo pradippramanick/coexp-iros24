@@ -2,7 +2,7 @@ from collections import Counter
 import pandas
 from sklearn.model_selection import train_test_split
 from utils.ME_constants import action_prefix, Obs_prefix, Plan_prefix_template, test_only_tasks, label2id
-from utils.basic_utils import camel_case_split
+from utils.ai2thor_utils import camel_case_split
 from utils.serialization_utils import json_load
 
 reflect_dataset = json_load('data/RoboFail_generated_w_SRL.json')
