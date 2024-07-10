@@ -1,0 +1,3344 @@
+[
+ {
+  "task_id": "warmWater-6_gt_step_59_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "cup is inside robot gripper",
+   "mug (filled with water and clean)",
+   "mug is on the left of stove knob",
+   "mug is inside cup",
+   "mug is on top of first countertop"
+  ],
+  "explanation": "Wrong perception: glass and mug",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation supported by observation - cup inside gripper"
+ },
+ {
+  "task_id": "warmWater-6_pred_step_120_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to dining table",
+   "Put mug on dining table"
+  ],
+  "action": "put mug on dining table",
+  "observation": [
+   "nothing is inside robot gripper",
+   "mug (filled with water and clean)",
+   "mug is on top of dining table",
+   "house plant is on top of dining table",
+   "mug is below house plant"
+  ],
+  "explanation": "The robot plan failed because it did not include the step to fill the mug with warm water before putting it in the sink.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "Contradiction due to world model mismatch - no step to fill the mug with warm water contradicts plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-6_gt_step_59_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "cup is inside robot gripper",
+   "mug (filled with water and clean)",
+   "mug is on the left of stove knob",
+   "mug is inside cup",
+   "mug is on top of first countertop"
+  ],
+  "explanation": "The robot plan failed because it did not include the step to fill the mug with warm water before putting it in the sink.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "Contradiction due to world model mismatch - no step to fill the mug with warm water contradicts plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "switchDevices-6_gt_step_51_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop in tv stand",
+   "Move to remote control",
+   "Pick up remote control"
+  ],
+  "action": "pick up remote control",
+  "observation": [
+   "nothing is inside robot gripper",
+   "remote control is below book",
+   "remote control is on top of coffee table"
+  ],
+  "explanation": "Book is blocking remote control",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , remote control is below book entails explanation"
+ },
+ {
+  "task_id": "switchDevices-6_pred_step_63_reflect_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop in tv stand",
+   "Move to remote control",
+   "Pick up remote control",
+   "Move to television",
+   "Toggle on television"
+  ],
+  "action": "toggle on television",
+  "observation": [
+   "nothing is inside robot gripper",
+   "television (turned off)",
+   "television is on top of tv stand"
+  ],
+  "explanation": "The robot failed to toggle on the television. the failure was caused by the robot not being able to locate the remote control to perform the action.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "switchDevices-6_gt_step_51_reflect_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop in tv stand",
+   "Move to remote control",
+   "Pick up remote control"
+  ],
+  "action": "pick up remote control",
+  "observation": [
+   "nothing is inside robot gripper",
+   "remote control is below book",
+   "remote control is on top of coffee table"
+  ],
+  "explanation": "The robot failed to toggle on the television. the failure was caused by the robot not being able to locate the remote control to perform the action.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , not locating remote control contradicts observed remote control below book"
+ },
+ {
+  "task_id": "cookEgg-5_gt_step_61_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Put egg on second countertop",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "book is inside robot gripper",
+   "pan (clean)",
+   "pan is on the right of kettle",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot mis-identified book as pan, and picked up the book instead of the pan. the book cannot be put on the stove burner.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by book inside gripper"
+ },
+ {
+  "task_id": "cookEgg-5_gt_step_61_reflect_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Put egg on second countertop",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "book is inside robot gripper",
+   "pan (clean)",
+   "pan is on the right of kettle",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot failed to pick up the pan and instead picked up a book. this failure was caused by a mistake in the robot's action selection algorithm or a sensor error that led to the incorrect object being identified and picked up.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by book inside gripper"
+ },
+ {
+  "task_id": "storeEgg-4_gt_step_101_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to bowl",
+   "Put egg in container"
+  ],
+  "action": "put egg in container",
+  "observation": [
+   "nothing is inside robot gripper",
+   "egg (not sliced and not cracked)",
+   "egg is on top of dining table",
+   "egg is on the right of toaster",
+   "egg is on the left of pan"
+  ],
+  "explanation": "Ambiguous plan - says some container (maps to pan)",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by action: put egg in container, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-7_gt_step_16_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot"
+  ],
+  "action": "pick up pot",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot (empty and clean)",
+   "pan is on top of pot",
+   "pot is on the left of potato",
+   "pot is on top of third countertop"
+  ],
+  "explanation": "Pan is blocking the pot",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by - pan is on pot"
+ },
+ {
+  "task_id": "waterPlant-7_pred_step_36_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Move to pot",
+   "Pick up pot",
+   "Move to house plant",
+   "Pour liquid from pot into house plant"
+  ],
+  "action": "pour liquid from pot into house plant",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot (empty and clean)",
+   "house plant (empty)",
+   "pan is on top of pot",
+   "pot is on the left of potato",
+   "pot is on top of third countertop",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "The robot plan failed because there was no step in the plan to actually fill the pot with water from the faucet before pouring it into the house plant.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "Contradiction due to world model mismatch - valid plan to fill water in pot, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-10_gt_step_32_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot"
+  ],
+  "action": "pick up pot",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot is inside sink"
+  ],
+  "explanation": "Failed to successfully execute (pick_up, pot)",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "makeCoffee-6_gt_step_23_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "bowl is inside robot gripper"
+  ],
+  "explanation": "The robot mis-identified bowl as mug, as a result, the bowl cannot be put inside the coffee machine.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by bowl in gripper"
+ },
+ {
+  "task_id": "makeCoffee-6_gt_step_23_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "bowl is inside robot gripper"
+  ],
+  "explanation": "The robot failed to pick up the mug because it mistakenly picked up a bowl instead. the failure was caused by a misidentification of the object in the gripper.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by bowl in gripper"
+ },
+ {
+  "task_id": "heatPotato-6_gt_step_23_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato"
+  ],
+  "action": "pick up potato",
+  "observation": [
+   "apple is inside robot gripper"
+  ],
+  "explanation": "The robot mis-identified apple as potato, and heated an apple instead of a potato.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by apple in gripper"
+ },
+ {
+  "task_id": "heatPotato-6_gt_step_23_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato"
+  ],
+  "action": "pick up potato",
+  "observation": [
+   "apple is inside robot gripper"
+  ],
+  "explanation": "The robot failed to pick up the potato and instead picked up an apple. the failure was caused by the robot's inability to correctly identify and grasp the potato.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by apple inside gripper"
+ },
+ {
+  "task_id": "storeEgg-9_gt_step_15_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge"
+  ],
+  "action": "open fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "fridge (closed)"
+  ],
+  "explanation": "Failed to successfully execute (open_obj, fridge)",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by closed fridge"
+ },
+ {
+  "task_id": "storeEgg-9_gt_step_15_reflect_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge"
+  ],
+  "action": "open fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "fridge (closed)"
+  ],
+  "explanation": "The robot failed to open the fridge because it did not have the necessary action to open the fridge in its sequence of actions.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-8_gt_step_34_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to pan",
+   "Put potato on pan"
+  ],
+  "action": "put potato on pan",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "potato is on the left of tomato",
+   "potato is on top of pan",
+   "potato is on top of first countertop",
+   "pan is on the left of tomato",
+   "pan is on the left of knife",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot should use a microwave-safe container (e.g. plate) to heat the potato instead of a pan.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-8_pred_step_111_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to pan",
+   "Put potato on pan",
+   "Pick up pan",
+   "Move to microwave",
+   "Move to countertop",
+   "Put pan on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to pan",
+   "Pick up pan",
+   "Move to microwave",
+   "Put pan in microwave",
+   "Close microwave",
+   "Toggle on microwave"
+  ],
+  "action": "toggle on microwave",
+  "observation": [
+   "pan is inside robot gripper",
+   "microwave (closed and turned on)"
+  ],
+  "explanation": "The robot plan failed because the robot did not put the potato on the pan before picking up the pan, resulting in the pan being empty when it was placed in the microwave.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "explanation contradicts the action put potato on pan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-8_gt_step_34_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to pan",
+   "Put potato on pan"
+  ],
+  "action": "put potato on pan",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "potato is on the left of tomato",
+   "potato is on top of pan",
+   "potato is on top of first countertop",
+   "pan is on the left of tomato",
+   "pan is on the left of knife",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot plan failed because the robot did not put the potato on the pan before picking up the pan, resulting in the pan being empty when it was placed in the microwave.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "explanation contradicts action - put potato on pan , explanation contradicts observation - potato is on top of pan"
+ },
+ {
+  "task_id": "switchDevices-9_gt_step_40_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand"
+  ],
+  "action": "put laptop on tv stand",
+  "observation": [
+   "laptop is inside robot gripper",
+   "laptop (closed and turned off)",
+   "television is on top of tv stand",
+   "tv stand is on the left of garbage can",
+   "watch is on top of tv stand",
+   "keychain is on top of tv stand",
+   "book is on top of tv stand"
+  ],
+  "explanation": "Failed to successfully execute (put_on, laptop, tvstand)",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by laptop in gripper and not on tvstand"
+ },
+ {
+  "task_id": "storeEgg-3_gt_step_102_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to pan",
+   "Put egg in pan"
+  ],
+  "action": "put egg in pan",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "egg (not sliced and not cracked)",
+   "bowl is on the right of egg",
+   "egg is on top of dining table",
+   "egg is on the right of toaster",
+   "egg is on the left of pan",
+   "pan is on top of dining table",
+   "pan is on the left of bread",
+   "pan is on the right of toaster"
+  ],
+  "explanation": "Wrong plan - robot puts egg in the pan instead of bowl",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - put egg in pan, explanation is neutral to observation"
+ },
+ {
+  "task_id": "storeEgg-3_gt_step_143_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to pan",
+   "Put egg in pan",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up pan",
+   "Move to fridge",
+   "Put pan in fridge"
+  ],
+  "action": "put pan in fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "fridge (open)",
+   "lettuce is inside fridge",
+   "egg is inside fridge",
+   "pan is inside fridge"
+  ],
+  "explanation": "Wrong plan - robot puts egg in the pan instead of bowl",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - put egg in pan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "storeEgg-2_gt_step_16_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg"
+  ],
+  "action": "pick up egg",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Lettuce is blocking the egg",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation is lettuce is not observed"
+ },
+ {
+  "task_id": "storeEgg-5_gt_step_101_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to bowl",
+   "Put egg in bowl"
+  ],
+  "action": "put egg in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "egg (not sliced and not cracked)",
+   "bowl is on top of dining table",
+   "bowl is on the left of bread",
+   "egg is on top of dining table",
+   "egg is on the right of toaster",
+   "egg is on the left of pan"
+  ],
+  "explanation": "Wrong execution - policy puts egg in pan instead of bowl",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "Contradiction because robot observes egg is on left of pan"
+ },
+ {
+  "task_id": "storeEgg-1_gt_step_127_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to bowl",
+   "Put egg in bowl",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "pan is inside robot gripper",
+   "pan (clean)"
+  ],
+  "explanation": "Wrong plan - robot puts pan instead of bowl in the fridge",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "explanation contradicts plan because there is no action that puts pan in fridge, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "storeEgg-1_gt_step_141_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to countertop",
+   "Put egg on first countertop",
+   "Move to fridge",
+   "Close fridge",
+   "Move to egg",
+   "Pick up egg",
+   "Move to bowl",
+   "Put egg in bowl",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up pan",
+   "Move to fridge",
+   "Put pan in fridge"
+  ],
+  "action": "put pan in fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "fridge (open)",
+   "lettuce is inside fridge",
+   "pan is inside fridge"
+  ],
+  "explanation": "Wrong plan - robot puts pan instead of bowl in the fridge",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by action put pan in fridge, explanation is supported by observation pan inside fridge after action"
+ },
+ {
+  "task_id": "storeEgg-10_gt_step_35_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to countertop",
+   "Put egg on countertop"
+  ],
+  "action": "put egg on countertop",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Missing (pick_up, egg)",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing pick action in plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "storeEgg-10_gt_step_35_reflect_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Move to countertop",
+   "Put egg on countertop"
+  ],
+  "action": "put egg on countertop",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to store the egg in the bowl in the fridge because it did not pick up the egg from the countertop.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing pick action in plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "storeEgg-7_gt_step_15_gt_exp",
+  "plan_until_failure": [
+   "Move to egg",
+   "Pick up egg"
+  ],
+  "action": "pick up egg",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Missing step of open fridge before pick up the egg",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "storeEgg-7_gt_step_15_reflect_exp",
+  "plan_until_failure": [
+   "Move to egg",
+   "Pick up egg"
+  ],
+  "action": "pick up egg",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to pick up the egg from the fridge because the fridge remained closed and there was nothing inside the robot gripper. the failure was caused by the robot not successfully opening the fridge door to access the egg.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-2_gt_step_38_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Pour liquid from mug into sink",
+   "Move to coffee machine"
+  ],
+  "action": "move to coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)"
+  ],
+  "explanation": "Dropped mug while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "makeCoffee-4_gt_step_17_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (filled with water and clean)"
+  ],
+  "explanation": "The mug was already filled with water at the beginning of the task execution, and the robot never emptied it.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Statement - robot never emptied it - is supported by lack of action for emptying mug, explanation is supported by observation of mug filled with water"
+ },
+ {
+  "task_id": "makeCoffee-4_gt_step_18_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine"
+  ],
+  "action": "move to coffee machine",
+  "observation": [
+   "mug is inside robot gripper",
+   "coffee machine (turned off)"
+  ],
+  "explanation": "The mug was already filled with water at the beginning of the task execution, and the robot never emptied it.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "statement - robot never emptied it - is supported by lack of action for emptying mug, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-4_gt_step_30_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine",
+   "Put mug in coffee machine"
+  ],
+  "action": "put mug in coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)",
+   "mug (filled with water and clean)",
+   "mug is inside coffee machine",
+   "mug is on top of second countertop"
+  ],
+  "explanation": "The mug was already filled with water at the beginning of the task execution, and the robot never emptied it.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by lack of mug emptying action, explanation is supported by observation - mug filled with water"
+ },
+ {
+  "task_id": "makeCoffee-5_gt_step_22_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink"
+  ],
+  "action": "put mug on sink",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (empty and dirty)"
+  ],
+  "explanation": "The robot failed to put the mug inside the sink (or on top of the sink basin).",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observation - mug inside gripper"
+ },
+ {
+  "task_id": "makeCoffee-1_gt_step_19_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink"
+  ],
+  "action": "move to sink",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Dropped mug while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "makeCoffee-1_pred_step_22_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink"
+  ],
+  "action": "put mug on sink",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to put the mug on the sink. the failure was caused by dropping something, which could have been the mug, while moving to the sink.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by plan, explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "makeCoffee-1_gt_step_19_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink"
+  ],
+  "action": "move to sink",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to put the mug on the sink. the failure was caused by dropping something, which could have been the mug, while moving to the sink.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "makeCoffee-7_gt_step_32_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet"
+  ],
+  "action": "toggle off faucet",
+  "observation": [
+   "nothing is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "The robot never executed the action to pour water from mug after cleaning it. as a result, the mug cannot be filled with coffee.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because at this timestep the robot finishes cleaning mug and it is unknown if the robot pours out water later or not, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-7_gt_step_35_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (filled with water and clean)"
+  ],
+  "explanation": "The robot never executed the action to pour water from mug after cleaning it. as a result, the mug cannot be filled with coffee.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because at this timestep the robot picks up mug after cleaning and it is unknown if the robot pours out water later or not, explanation is supported by observation - mug filled with water and clean"
+ },
+ {
+  "task_id": "makeCoffee-7_gt_step_36_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to coffee machine"
+  ],
+  "action": "move to coffee machine",
+  "observation": [
+   "mug is inside robot gripper",
+   "coffee machine (turned off)"
+  ],
+  "explanation": "The robot never executed the action to pour water from mug after cleaning it. as a result, the mug cannot be filled with coffee.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by robot moving to coffee machine without doing an pouring action, explanation is neutral to observation"
+ },
+ {
+  "task_id": "makeCoffee-7_gt_step_47_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to coffee machine",
+   "Put mug in coffee machine"
+  ],
+  "action": "put mug in coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)",
+   "mug (filled with water and clean)",
+   "mug is inside coffee machine",
+   "mug is on top of second countertop"
+  ],
+  "explanation": "The robot never executed the action to pour water from mug after cleaning it. as a result, the mug cannot be filled with coffee.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by lack of pouring action, explanation is supported by observation - mug filled with water and clean"
+ },
+ {
+  "task_id": "makeCoffee-10_gt_step_48_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Pour liquid from mug into sink",
+   "Move to coffee machine",
+   "Toggle on coffee machine"
+  ],
+  "action": "toggle on coffee machine",
+  "observation": [
+   "mug is inside robot gripper",
+   "coffee machine (turned on)"
+  ],
+  "explanation": "The robot put the mug inside the coffee machine after the coffee machine was turned off, as a result, the mug remained empty.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "Explanation contradicts plan as there is no action of putting mug in coffee machine or turning it off, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-10_gt_step_54_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug on sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Pour liquid from mug into sink",
+   "Move to coffee machine",
+   "Toggle on coffee machine",
+   "Toggle off coffee machine",
+   "Put mug in coffee machine"
+  ],
+  "action": "put mug in coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)",
+   "mug (empty and clean)",
+   "mug is inside coffee machine",
+   "mug is on top of second countertop"
+  ],
+  "explanation": "The robot put the mug inside the coffee machine after the coffee machine was turned off, as a result, the mug remained empty.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by plan, explanation is supported by observations - coffee machine turned off and empty mug inside it"
+ },
+ {
+  "task_id": "makeCoffee-9_gt_step_23_gt_exp",
+  "plan_until_failure": [
+   "Move to bowl",
+   "Pick up bowl"
+  ],
+  "action": "pick up bowl",
+  "observation": [
+   "bowl is inside robot gripper"
+  ],
+  "explanation": "The robot plan should not use a bowl instead of a mug or cup to make coffee. as a result, the bowl cannot be put inside the coffee machine.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by pick up bowl action, explanation is supported by observation - bowl inside gripper"
+ },
+ {
+  "task_id": "makeCoffee-8_gt_step_17_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (empty and dirty)"
+  ],
+  "explanation": "The mug is dirty at the beginning of the task execution, and the robot never cleaned the mug.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation supported by lack of actions to clean mug in the plan, explanation is supported by observation - mug empty and dirty"
+ },
+ {
+  "task_id": "makeCoffee-8_gt_step_18_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine"
+  ],
+  "action": "move to coffee machine",
+  "observation": [
+   "mug is inside robot gripper",
+   "coffee machine (turned off)"
+  ],
+  "explanation": "The mug is dirty at the beginning of the task execution, and the robot never cleaned the mug.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by lack of actions to clean mug in the plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-8_gt_step_30_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine",
+   "Put mug in coffee machine"
+  ],
+  "action": "put mug in coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)",
+   "mug (empty and dirty)",
+   "mug is inside coffee machine",
+   "mug is on top of second countertop"
+  ],
+  "explanation": "The mug is dirty at the beginning of the task execution, and the robot never cleaned the mug.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by lack of actions to clean mug in the plan, explanation is supported by observations - dirty mug and mug inside coffee machine"
+ },
+ {
+  "task_id": "makeCoffee-8_pred_step_30_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine",
+   "Put mug in coffee machine"
+  ],
+  "action": "put mug in coffee machine",
+  "observation": [
+   "nothing is inside robot gripper",
+   "coffee machine (turned off)",
+   "mug (empty and dirty)",
+   "mug is inside coffee machine",
+   "mug is on top of second countertop"
+  ],
+  "explanation": "The robot failed to put the mug in the coffee machine because the mug was placed on top of the second countertop instead of inside the coffee machine.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "Explanation is supported by lack of actions to clean mug in the plan, explanation contradicts observation - mug is inside coffe machine and this contradiction precedes entailment rule"
+ },
+ {
+  "task_id": "makeCoffee-8_gt_step_17_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug"
+  ],
+  "action": "pick up mug",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (empty and dirty)"
+  ],
+  "explanation": "The robot failed to put the mug in the coffee machine because the mug was placed on top of the second countertop instead of inside the coffee machine.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeCoffee-8_gt_step_18_reflect_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to coffee machine"
+  ],
+  "action": "move to coffee machine",
+  "observation": [
+   "mug is inside robot gripper",
+   "coffee machine (turned off)"
+  ],
+  "explanation": "The robot failed to put the mug in the coffee machine because the mug was placed on top of the second countertop instead of inside the coffee machine.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "toastBread-9_gt_step_50_gt_exp",
+  "plan_until_failure": [
+   "Move to knife",
+   "Pick up knife",
+   "Move to bread",
+   "Slice bread",
+   "Put knife on second countertop",
+   "Pick up bread slice",
+   "Move to toaster",
+   "Toggle on toaster",
+   "Put bread slice in toaster"
+  ],
+  "action": "put bread slice in toaster",
+  "observation": [
+   "nothing is inside robot gripper",
+   "toaster (turned on)",
+   "bread slice is on the right of salt shaker",
+   "bread slice is on the left of microwave",
+   "bread slice is on top of toaster",
+   "toaster is on the right of salt shaker",
+   "toaster is on the right of pepper shaker",
+   "toaster is on the left of microwave",
+   "toaster is on top of first countertop"
+  ],
+  "explanation": "The robot toggled on the toaster before trying to put the bread slice inside the toaster. as a result, the bread slice ended up on top of the toaster instead of inside it.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by plan, explanation is supported by observations - toaster turned on and bread slice on top of toaster"
+ },
+ {
+  "task_id": "heatPotato-3_gt_step_37_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate"
+  ],
+  "action": "put potato on plate",
+  "observation": [
+   "nothing is inside robot gripper",
+   "plate (clean)",
+   "potato is on top of dining table",
+   "plate is on top of dining table",
+   "apple is on top of plate"
+  ],
+  "explanation": "An apple is inside the plate already and the robot never removed it, as a result, the potato cannot be put on top of the plate due to limited plate.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by missing action to clean or empty plate, explanation is supported by observation - apple on top of plate and potato on dining table"
+ },
+ {
+  "task_id": "heatPotato-3_gt_step_40_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate"
+  ],
+  "action": "pick up plate",
+  "observation": [
+   "plate is inside robot gripper",
+   "plate (clean)"
+  ],
+  "explanation": "An apple is inside the plate already and the robot never removed it, as a result, the potato cannot be put on top of the plate due to limited plate.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by lack of actions to empty the plate, explanation is neutral to failure observation because it observes a different action"
+ },
+ {
+  "task_id": "heatPotato-3_gt_step_37_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate"
+  ],
+  "action": "put potato on plate",
+  "observation": [
+   "nothing is inside robot gripper",
+   "plate (clean)",
+   "potato is on top of dining table",
+   "plate is on top of dining table",
+   "apple is on top of plate"
+  ],
+  "explanation": "The robot failed to put the potato on the plate as instructed. the failure was caused by the robot not properly releasing the potato from its gripper, resulting in the potato being dropped on the dining table instead of being placed on the plate.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observation - potato on dining table"
+ },
+ {
+  "task_id": "heatPotato-3_gt_step_40_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate"
+  ],
+  "action": "pick up plate",
+  "observation": [
+   "plate is inside robot gripper",
+   "plate (clean)"
+  ],
+  "explanation": "The robot failed to put the potato on the plate as instructed. the failure was caused by the robot not properly releasing the potato from its gripper, resulting in the potato being dropped on the dining table instead of being placed on the plate.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-1_gt_step_44_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave"
+  ],
+  "action": "move to microwave",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Dropped plate while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by empty gripper"
+ },
+ {
+  "task_id": "heatPotato-1_pred_step_70_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Put plate on countertop"
+  ],
+  "action": "put plate on countertop",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to heat the potato because it did not turn on the microwave. the failure was caused by the robot not executing the necessary action to heat the potato.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-1_gt_step_44_reflect_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave"
+  ],
+  "action": "move to microwave",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to heat the potato because it did not turn on the microwave. the failure was caused by the robot not executing the necessary action to heat the potato.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-10_gt_step_91_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Move to countertop",
+   "Put plate on first countertop",
+   "Move to microwave",
+   "Toggle on microwave"
+  ],
+  "action": "toggle on microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (closed and turned on)"
+  ],
+  "explanation": "The robot should not toggle on the microwave before trying to open it. as a result, the robot cannot open a microwave that is turned on.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-10_gt_step_94_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Move to countertop",
+   "Put plate on first countertop",
+   "Move to microwave",
+   "Toggle on microwave",
+   "Open microwave"
+  ],
+  "action": "open microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (closed and turned on)"
+  ],
+  "explanation": "The robot should not toggle on the microwave before trying to open it. as a result, the robot cannot open a microwave that is turned on.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by toggle on action followed by open action, explanation is supported by observation - microwave closed and turn on"
+ },
+ {
+  "task_id": "heatPotato-2_gt_step_115_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Move to countertop",
+   "Put plate on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Put plate in microwave"
+  ],
+  "action": "put plate in microwave",
+  "observation": [
+   "plate is inside robot gripper",
+   "plate (clean)",
+   "microwave (open and turned off)",
+   "potato is on top of plate",
+   "bowl is inside microwave",
+   "microwave is above plate"
+  ],
+  "explanation": "A bowl is already inside the microwave, as a result, the plate cannot be put inside the microwave due to limited space.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observation - bowl inside microwave and plate inside robot gripper"
+ },
+ {
+  "task_id": "heatPotato-9_gt_step_118_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Move to countertop",
+   "Put plate on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Put plate in microwave",
+   "Toggle on microwave"
+  ],
+  "action": "toggle on microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (open and turned off)",
+   "potato is inside microwave",
+   "plate is inside microwave"
+  ],
+  "explanation": "The robot should have closed the microwave before trying to toggle it on. as a result, the robot could not toggle on a microwave that is open.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by action put plate in microwave followed by toggle on microwave, explanation is supported by observations microwave open and turned off"
+ },
+ {
+  "task_id": "heatPotato-9_gt_step_121_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Move to countertop",
+   "Put plate on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Put plate in microwave",
+   "Toggle on microwave",
+   "Close microwave"
+  ],
+  "action": "close microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (closed and turned off)"
+  ],
+  "explanation": "The robot should have closed the microwave before trying to toggle it on. as a result, the robot could not toggle on a microwave that is open.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by action - toggle on microwave followed by close microwave, explanation is neutral to failure observation because it is for a different action"
+ },
+ {
+  "task_id": "heatPotato-5_gt_step_42_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate"
+  ],
+  "action": "pick up plate",
+  "observation": [
+   "plate is inside robot gripper",
+   "plate (clean)",
+   "potato is on top of plate"
+  ],
+  "explanation": "The robot never opened the microwave, as a result, the plate cannot be put inside the microwave.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-5_gt_step_43_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave"
+  ],
+  "action": "move to microwave",
+  "observation": [
+   "plate is inside robot gripper"
+  ],
+  "explanation": "The robot never opened the microwave, as a result, the plate cannot be put inside the microwave.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-5_gt_step_67_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave"
+  ],
+  "action": "move to microwave",
+  "observation": [
+   "plate is inside robot gripper",
+   "microwave (closed and turned off)"
+  ],
+  "explanation": "The robot never opened the microwave, as a result, the plate cannot be put inside the microwave.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "heatPotato-5_gt_step_72_gt_exp",
+  "plan_until_failure": [
+   "Move to potato",
+   "Pick up potato",
+   "Move to plate",
+   "Put potato on plate",
+   "Pick up plate",
+   "Move to microwave",
+   "Put plate in microwave"
+  ],
+  "action": "put plate in microwave",
+  "observation": [
+   "plate is inside robot gripper",
+   "plate (clean)",
+   "microwave (closed and turned off)",
+   "potato is on top of plate"
+  ],
+  "explanation": "The robot never opened the microwave, as a result, the plate cannot be put inside the microwave.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by missing action to open microwave, explanation is supported by observations - plate in gripper and microwave closed"
+ },
+ {
+  "task_id": "warmWater-7_gt_step_81_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to cup",
+   "Pick up cup"
+  ],
+  "action": "pick up cup",
+  "observation": [
+   "cup is inside robot gripper"
+  ],
+  "explanation": "Wrong plan: puts cup inside microwave instead of mug filled with water",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "Explanation is neutral to plan because the robot did not put cup inside microwave yet, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-7_gt_step_111_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to cup",
+   "Pick up cup",
+   "Move to microwave",
+   "Put cup in microwave"
+  ],
+  "action": "put cup in microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (open and turned off)",
+   "cup is inside microwave"
+  ],
+  "explanation": "Wrong plan: puts cup inside microwave instead of mug filled with water",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by action - put cup in microwave, explanation is supported by observation - cup is inside microwave"
+ },
+ {
+  "task_id": "warmWater-9_gt_step_89_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave",
+   "Open microwave",
+   "Pick up mug",
+   "Move to sink",
+   "Pour liquid from mug into sink"
+  ],
+  "action": "pour liquid from mug into sink",
+  "observation": [
+   "mug is inside robot gripper",
+   "mug (empty and clean)",
+   "plate is on top of sink",
+   "spatula is on top of sink"
+  ],
+  "explanation": "Wrong plan: pours water from mug after microwaving and before serving",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by action - pour liquid from mug into sink after picking it from microwave, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-1_gt_step_64_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Toggle on microwave"
+  ],
+  "action": "toggle on microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (open and turned off)",
+   "mug is inside microwave"
+  ],
+  "explanation": "Wrong order of toggle on microwave and close microwave",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "Explanation is neutral to plan because order of close microwave action cannot be verified, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-1_gt_step_67_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Toggle on microwave",
+   "Close microwave"
+  ],
+  "action": "close microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (closed and turned off)"
+  ],
+  "explanation": "Wrong order of toggle on microwave and close microwave",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by action - toggle on microwave before close microwave, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-3_gt_step_70_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave"
+  ],
+  "action": "toggle off microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "microwave (closed and turned off)"
+  ],
+  "explanation": "Incomplete plan: missed steps for serving the mug",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by plan ending at turning off microwave, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-4_gt_step_100_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave",
+   "Move to cup",
+   "Pick up cup"
+  ],
+  "action": "pick up cup",
+  "observation": [
+   "cup is inside robot gripper"
+  ],
+  "explanation": "Wrong plan: serves glass instead of the mug with water",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "Explanation is neutral to plan because the robot did not serve glass yet, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-4_gt_step_118_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to microwave",
+   "Move to countertop",
+   "Put mug on first countertop",
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave",
+   "Move to cup",
+   "Pick up cup",
+   "Move to dining table",
+   "Put cup on dining table"
+  ],
+  "action": "put cup on dining table",
+  "observation": [
+   "nothing is inside robot gripper",
+   "cup is on top of dining table",
+   "house plant is on top of dining table",
+   "cup is below house plant"
+  ],
+  "explanation": "Wrong plan: serves glass instead of the mug with water",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "Explanation is supported by action - put cup (glass) on dining table, explanation is supported by observation - cup is on top of dining table"
+ },
+ {
+  "task_id": "warmWater-10_gt_step_21_gt_exp",
+  "plan_until_failure": [
+   "Move to mug",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet"
+  ],
+  "action": "toggle on faucet",
+  "observation": [
+   "nothing is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "Failed to successfully execute (toggle_on, faucet)",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observation - faucet turned off"
+ },
+ {
+  "task_id": "warmWater-2_gt_step_21_gt_exp",
+  "plan_until_failure": [
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave"
+  ],
+  "action": "put mug in microwave",
+  "observation": [
+   "nothing is inside robot gripper",
+   "mug (empty and clean)",
+   "microwave (open and turned off)",
+   "mug is inside microwave"
+  ],
+  "explanation": "Wrong order of filling water and microwaving",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because explanation can neither be supported or contradicted by the plan so far, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "warmWater-2_gt_step_85_gt_exp",
+  "plan_until_failure": [
+   "Move to microwave",
+   "Open microwave",
+   "Move to mug",
+   "Pick up mug",
+   "Move to microwave",
+   "Put mug in microwave",
+   "Close microwave",
+   "Toggle on microwave",
+   "Toggle off microwave",
+   "Open microwave",
+   "Pick up mug",
+   "Move to sink",
+   "Put mug in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up mug",
+   "Move to dining table",
+   "Put mug on dining table"
+  ],
+  "action": "put mug on dining table",
+  "observation": [
+   "nothing is inside robot gripper",
+   "mug (filled with water and clean)",
+   "mug is on top of dining table",
+   "house plant is on top of dining table",
+   "mug is below house plant"
+  ],
+  "explanation": "Wrong order of filling water and microwaving",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by actions of microwaving occurring earlier than actions to fill mug with water, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeSalad-5_gt_step_162_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice tomato",
+   "Move to lettuce slice",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up tomato slice",
+   "Put tomato slice in bowl",
+   "Pick up potato",
+   "Put potato in bowl"
+  ],
+  "action": "put potato in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "tomato slice is on the right of potato",
+   "tomato slice is inside bowl",
+   "lettuce slice is inside bowl",
+   "lettuce slice is on the right of potato",
+   "potato is on top of first countertop",
+   "bowl is on top of first countertop"
+  ],
+  "explanation": "Missing step - slice potato",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "Explanation is supported by absence of slice potato action in the plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeSalad-5_pred_step_150_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice tomato",
+   "Move to lettuce slice",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl"
+  ],
+  "action": "put lettuce slice in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "tomato slice is on the right of lettuce slice",
+   "tomato slice is on the right of bowl",
+   "lettuce slice is on top of first countertop",
+   "lettuce slice is on the right of potato",
+   "lettuce slice is on the left of cup",
+   "lettuce slice is above bowl",
+   "lettuce slice is on the right of knife",
+   "potato is on the left of bowl",
+   "bowl is on top of first countertop",
+   "bowl is on the left of cup",
+   "bowl is on the right of spoon"
+  ],
+  "explanation": "The robot failed to put the lettuce slice in the bowl. the failure was caused by the robot placing the lettuce slice above the bowl instead of inside it.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "Explanation is neutral to plan, explanation is contradictory to observation - lettuce slice is above bowl and the predicate above is equivalent to on_top relation for the robot, which is further equivalent to bowel being a receptacle for lettuce"
+ },
+ {
+  "task_id": "makeSalad-5_gt_step_162_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice tomato",
+   "Move to lettuce slice",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up tomato slice",
+   "Put tomato slice in bowl",
+   "Pick up potato",
+   "Put potato in bowl"
+  ],
+  "action": "put potato in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "tomato slice is on the right of potato",
+   "tomato slice is inside bowl",
+   "lettuce slice is inside bowl",
+   "lettuce slice is on the right of potato",
+   "potato is on top of first countertop",
+   "bowl is on top of first countertop"
+  ],
+  "explanation": "The robot failed to put the lettuce slice in the bowl. the failure was caused by the robot placing the lettuce slice above the bowl instead of inside it.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "Explanation contradicts action - put lettuce slice in bowl which was successful, explanation is contradictory to observation - lettuce slice is inside bowl"
+ },
+ {
+  "task_id": "makeSalad-1_gt_step_124_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Put tomato on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Move to tomato",
+   "Slice tomato",
+   "Put knife on first countertop"
+  ],
+  "action": "put knife on first countertop",
+  "observation": [
+   "nothing is inside robot gripper",
+   "tomato slice is on top of first countertop",
+   "lettuce slice is on top of first countertop",
+   "potato is on top of first countertop",
+   "knife is on top of first countertop",
+   "bowl is on top of first countertop"
+  ],
+  "explanation": "Wrong order - knife is put on countertop before slicing tomato",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "Explanation is contradictory to plan where action - put knife on first countertop follows action - slice tomato, explanation contradicts observation - tomato slice is on the first countertop"
+ },
+ {
+  "task_id": "makeSalad-1_gt_step_125_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Put tomato on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Move to tomato",
+   "Slice tomato",
+   "Put knife on first countertop",
+   "Slice potato"
+  ],
+  "action": "slice potato",
+  "observation": [
+   "nothing is inside robot gripper",
+   "lettuce slice is on the right of potato",
+   "potato is on top of first countertop",
+   "potato is on the left of cup"
+  ],
+  "explanation": "Wrong order - knife is put on countertop before slicing tomato",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "Explanation is contradicts plan where action - slice tomato happens after action - put knife on first countertop, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeSalad-7_gt_step_187_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Put tomato on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Move to potato",
+   "Slice potato",
+   "Slice tomato",
+   "Put knife on first countertop",
+   "Pick up potato slice",
+   "Put potato slice in bowl",
+   "Pick up tomato slice",
+   "Put tomato slice in bowl",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up bowl",
+   "Move to fridge",
+   "Put bowl in fridge"
+  ],
+  "action": "put bowl in fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "fridge (open)",
+   "tomato slice is inside fridge",
+   "tomato slice is inside bowl",
+   "potato slice is inside fridge",
+   "potato slice is inside bowl",
+   "bowl is inside fridge"
+  ],
+  "explanation": "Missing (pick_up, lettucesliced), (put_in, lettucesliced, bowl)",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing actions to pick and put sliced lettuce in bowl during doing the same for potato and tomato, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeSalad-4_gt_step_188_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice potato",
+   "Slice tomato",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up tomato slice",
+   "Put tomato slice in bowl",
+   "Pick up potato slice",
+   "Put potato slice in bowl",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up bowl"
+  ],
+  "action": "pick up bowl",
+  "observation": [
+   "pan is inside robot gripper",
+   "tomato slice is inside bowl",
+   "lettuce slice is inside bowl",
+   "bowl is on top of first countertop",
+   "bowl is on the left of cup"
+  ],
+  "explanation": "Wrong perception: pan and bowl",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observations - pan inside gripper and bowl on countertop"
+ },
+ {
+  "task_id": "makeSalad-4_pred_step_130_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice potato"
+  ],
+  "action": "slice potato",
+  "observation": [
+   "knife is inside robot gripper",
+   "potato slice is on the right of lettuce slice",
+   "potato slice is on top of first countertop",
+   "potato slice is on the right of spoon",
+   "potato slice is on the right of bowl",
+   "tomato is on the left of potato slice"
+  ],
+  "explanation": "The robot failed to slice the potato. the failure was caused by the absence of a potato in the robot's gripper, indicating that the robot was unable to successfully pick up the potato before attempting to slice it.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "explanation is contradictory to action - pick up potato that occurs earlier than failed slice action and thus assumed to be successful, explanation contradicts observations of potato slice on countertop and right to lettuce slice and bowl"
+ },
+ {
+  "task_id": "makeSalad-4_gt_step_188_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Move to tomato",
+   "Pick up tomato",
+   "Move to bowl",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Slice potato",
+   "Slice tomato",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up tomato slice",
+   "Put tomato slice in bowl",
+   "Pick up potato slice",
+   "Put potato slice in bowl",
+   "Move to fridge",
+   "Open fridge",
+   "Move to bowl",
+   "Pick up bowl"
+  ],
+  "action": "pick up bowl",
+  "observation": [
+   "pan is inside robot gripper",
+   "tomato slice is inside bowl",
+   "lettuce slice is inside bowl",
+   "bowl is on top of first countertop",
+   "bowl is on the left of cup"
+  ],
+  "explanation": "The robot failed to slice the potato. the failure was caused by the absence of a potato in the robot's gripper, indicating that the robot was unable to successfully pick up the potato before attempting to slice it.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "N",
+  "comment": "explanation contradicts action - pick up potato which occurs earlier and thus assumed to be successful, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "makeSalad-3_gt_step_140_gt_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to apple",
+   "Pick up apple",
+   "Move to bowl",
+   "Put apple on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Move to potato",
+   "Slice potato",
+   "Move to apple",
+   "Slice apple",
+   "Put knife on first countertop",
+   "Move to lettuce slice",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up potato slice",
+   "Put potato slice in bowl",
+   "Pick up apple slice",
+   "Put apple slice in bowl"
+  ],
+  "action": "put apple slice in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "apple slice is on the right of potato slice",
+   "apple slice is on the left of lettuce slice",
+   "apple slice is on top of first countertop",
+   "apple slice is on the right of spoon",
+   "apple slice is inside bowl",
+   "potato slice is on the left of bowl",
+   "lettuce slice is inside bowl",
+   "knife is on the left of apple slice",
+   "bowl is on top of first countertop",
+   "bowl is on the right of spoon"
+  ],
+  "explanation": "Wrong plan - apple instead of tomato, apple is not a part of salad",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by actions to slice apple and put it in a bowl, explanation is supported by observation - apple slice inside bowl"
+ },
+ {
+  "task_id": "makeSalad-3_pred_step_99_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to apple",
+   "Pick up apple",
+   "Move to bowl",
+   "Put apple on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce"
+  ],
+  "action": "slice lettuce",
+  "observation": [
+   "knife is inside robot gripper",
+   "lettuce slice is on top of first countertop",
+   "lettuce slice is on the left of bread",
+   "lettuce slice is on the right of spoon",
+   "lettuce slice is on the right of bowl"
+  ],
+  "explanation": "The failure occurred when the robot attempted to slice the lettuce but was unable to do so because the apple was blocking the lettuce slice. the robot should have first moved the apple to make space for slicing the lettuce.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "explanation is neutral to plan, statement - unable to slice lettuce in the explanation contradicts observations of lettuce slice on countertop beside bread and spoon and bowl"
+ },
+ {
+  "task_id": "makeSalad-3_gt_step_46_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to apple",
+   "Pick up apple"
+  ],
+  "action": "pick up apple",
+  "observation": [
+   "apple is inside robot gripper"
+  ],
+  "explanation": "The failure occurred when the robot attempted to slice the lettuce but was unable to do so because the apple was blocking the lettuce slice. the robot should have first moved the apple to make space for slicing the lettuce.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "explanation is neutral to plan, explanation contradicts observation apple inside gripper"
+ },
+ {
+  "task_id": "makeSalad-3_gt_step_140_reflect_exp",
+  "plan_until_failure": [
+   "Move to lettuce",
+   "Pick up lettuce",
+   "Move to bowl",
+   "Put lettuce on first countertop",
+   "Move to apple",
+   "Pick up apple",
+   "Move to bowl",
+   "Put apple on first countertop",
+   "Move to potato",
+   "Pick up potato",
+   "Move to bowl",
+   "Put potato on first countertop",
+   "Move to knife",
+   "Pick up knife",
+   "Move to bowl",
+   "Slice lettuce",
+   "Move to potato",
+   "Slice potato",
+   "Move to apple",
+   "Slice apple",
+   "Put knife on first countertop",
+   "Move to lettuce slice",
+   "Pick up lettuce slice",
+   "Put lettuce slice in bowl",
+   "Pick up potato slice",
+   "Put potato slice in bowl",
+   "Pick up apple slice",
+   "Put apple slice in bowl"
+  ],
+  "action": "put apple slice in bowl",
+  "observation": [
+   "nothing is inside robot gripper",
+   "apple slice is on the right of potato slice",
+   "apple slice is on the left of lettuce slice",
+   "apple slice is on top of first countertop",
+   "apple slice is on the right of spoon",
+   "apple slice is inside bowl",
+   "potato slice is on the left of bowl",
+   "lettuce slice is inside bowl",
+   "knife is on the left of apple slice",
+   "bowl is on top of first countertop",
+   "bowl is on the right of spoon"
+  ],
+  "explanation": "The failure occurred when the robot attempted to slice the lettuce but was unable to do so because the apple was blocking the lettuce slice. the robot should have first moved the apple to make space for slicing the lettuce.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "explanation is neutral to failure observation, explanation is supported by observation - lettuce slice inside bowl"
+ },
+ {
+  "task_id": "waterPlant-4_gt_step_28_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Toggle on faucet",
+   "Toggle off faucet"
+  ],
+  "action": "toggle off faucet",
+  "observation": [
+   "pot is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "Wrong order - faucet is turned on and off before pot is put in the sink",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-4_gt_step_31_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Put pot in sink"
+  ],
+  "action": "put pot in sink",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot (empty and clean)",
+   "pot is inside sink"
+  ],
+  "explanation": "Wrong order - faucet is turned on and off before pot is put in the sink",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-6_gt_step_44_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Move to bowl",
+   "Pick up container"
+  ],
+  "action": "pick up container",
+  "observation": [
+   "bowl is inside robot gripper"
+  ],
+  "explanation": "Ambiguous plan - some container",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - pick up container, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-6_pred_step_56_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Move to bowl",
+   "Pick up container",
+   "Move to house plant",
+   "Pour liquid from bowl into house plant"
+  ],
+  "action": "pour liquid from bowl into house plant",
+  "observation": [
+   "bowl is inside robot gripper",
+   "house plant (empty)",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "The failure occurred at 00:56 when the robot attempted to pour liquid from the bowl into the house plant, but the bowl was still inside the robot gripper. the failure was caused by the robot's inability to release the bowl before pouring the liquid.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan, although the explanation is incorrect the observation neither supports or contradicts it"
+ },
+ {
+  "task_id": "waterPlant-6_gt_step_44_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Move to bowl",
+   "Pick up container"
+  ],
+  "action": "pick up container",
+  "observation": [
+   "bowl is inside robot gripper"
+  ],
+  "explanation": "The failure occurred at 00:56 when the robot attempted to pour liquid from the bowl into the house plant, but the bowl was still inside the robot gripper. the failure was caused by the robot's inability to release the bowl before pouring the liquid.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan, although the explanation is incorrect the observation neither supports or contradicts it"
+ },
+ {
+  "task_id": "waterPlant-3_gt_step_38_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to sink",
+   "Pour liquid from pot into sink"
+  ],
+  "action": "pour liquid from pot into sink",
+  "observation": [
+   "pot is inside robot gripper",
+   "pot (empty and clean)"
+  ],
+  "explanation": "Wrong plan - wrong step: (pour, pot, sink)",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - pour liquid from pot into sink which is wrong because the receptacle should be plant, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-3_pred_step_43_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to sink",
+   "Pour liquid from pot into sink",
+   "Move to house plant",
+   "Pour liquid from pot into house plant"
+  ],
+  "action": "pour liquid from pot into house plant",
+  "observation": [
+   "pot is inside robot gripper",
+   "house plant (empty)",
+   "pot (empty and clean)"
+  ],
+  "explanation": "The failure at 00:43 occurred because the robot attempted to pour liquid from the pot into the house plant, but the pot was empty at that time, leading to the failure to water the plant.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observations - empty pot and empty plant even though the explanation does not reveal the actual reason for failure"
+ },
+ {
+  "task_id": "waterPlant-9_gt_step_36_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to house plant"
+  ],
+  "action": "move to house plant",
+  "observation": [
+   "nothing is inside robot gripper",
+   "house plant (empty)",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "Dropped pot while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - empty gripper"
+ },
+ {
+  "task_id": "waterPlant-9_pred_step_39_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to house plant",
+   "Pour liquid from pot into house plant"
+  ],
+  "action": "pour liquid from pot into house plant",
+  "observation": [
+   "nothing is inside robot gripper",
+   "house plant (empty)",
+   "pot (empty and clean)",
+   "pot is on the right of potato",
+   "pot is on top of third countertop",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "The robot failed to water the plant at 00:39 because it attempted to pour liquid from an empty pot into the house plant. the failure was caused by not refilling the pot with water after picking it up at 00:34.",
+  "label": "C",
+  "L_plan_exp": "N",
+  "L_obs_exp": "C",
+  "comment": "explanation is neutral to plan, contradiction due to world model mismatch - pouring liquid requires pot to be inside gripper"
+ },
+ {
+  "task_id": "waterPlant-9_gt_step_36_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to house plant"
+  ],
+  "action": "move to house plant",
+  "observation": [
+   "nothing is inside robot gripper",
+   "house plant (empty)",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "The robot failed to water the plant at 00:39 because it attempted to pour liquid from an empty pot into the house plant. the failure was caused by not refilling the pot with water after picking it up at 00:34.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-1_gt_step_25_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink"
+  ],
+  "action": "put pot in sink",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot (filled with wine and clean)",
+   "pot is inside sink",
+   "pot is on the right of soap bottle"
+  ],
+  "explanation": "Incomplete plan - pot is filled with wine already",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by missing actions to pour wine before putting pot in sink, explanation is supported by observation - pot filled with wine"
+ },
+ {
+  "task_id": "waterPlant-1_pred_step_39_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to house plant",
+   "Pour liquid from pot into house plant"
+  ],
+  "action": "pour liquid from pot into house plant",
+  "observation": [
+   "pot is inside robot gripper",
+   "house plant (filled with wine)",
+   "pot (empty and clean)",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "The failure occurred at 00:39 when the robot attempted to pour liquid from the pot into the house plant, but the pot was already empty, resulting in the plant not being watered. the failure was caused by the robot not refilling the pot with water after pouring it into the sink earlier.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "statement - not refilling the pot with water after pouring it into the sink earlier - contradicts plan, contradiction due to world model mismatch - the pot is expected to be empty after pouring liquid"
+ },
+ {
+  "task_id": "waterPlant-5_gt_step_34_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up kettle"
+  ],
+  "action": "pick up kettle",
+  "observation": [
+   "kettle is inside robot gripper"
+  ],
+  "explanation": "Wrong plan - kettle is picked up instead of pot",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by action pick up kettle, explanation is supported by observation - kettle inside gripper"
+ },
+ {
+  "task_id": "waterPlant-2_gt_step_23_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot on third countertop"
+  ],
+  "action": "put pot on third countertop",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pot (empty and clean)",
+   "pot is on top of third countertop"
+  ],
+  "explanation": "Wrong plan - pot is put on countertop instead of inside sink",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by action - put pot on third countertop, explanation is supported by observation - pot is on third countertop"
+ },
+ {
+  "task_id": "waterPlant-2_gt_step_37_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot on third countertop",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to house plant",
+   "Pour liquid from pot into house plant"
+  ],
+  "action": "pour liquid from pot into house plant",
+  "observation": [
+   "pot is inside robot gripper",
+   "house plant (empty)",
+   "pot (empty and clean)",
+   "house plant is on top of third countertop"
+  ],
+  "explanation": "Wrong plan - pot is put on countertop instead of inside sink",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - put pot on third countertop before toggling on faucet, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "waterPlant-8_gt_step_26_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet"
+  ],
+  "action": "toggle on faucet",
+  "observation": [
+   "nothing is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "Failed to successfully execute (toggle_on, faucet)",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - faucet turned off"
+ },
+ {
+  "task_id": "waterPlant-8_gt_step_26_reflect_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet"
+  ],
+  "action": "toggle on faucet",
+  "observation": [
+   "nothing is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "The failure at 00:26 occurred because the robot did not successfully turn on the faucet to water the plant. the robot was unable to complete the task due to the faucet remaining turned off.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - faucet turned off"
+ },
+ {
+  "task_id": "cookEgg-2_gt_step_58_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Put egg on first countertop",
+   "Pick up pan",
+   "Move to first stove burner",
+   "Put pan on first stove burner"
+  ],
+  "action": "put pan on first stove burner",
+  "observation": [
+   "pan is inside robot gripper",
+   "first stove burner (turned on)",
+   "pan (clean)",
+   "pot is on top of first stove burner"
+  ],
+  "explanation": "The robot failed to put the pan on the first stove burner because there was already a pot on it.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observations - pan inside gripper and pot on first stove burner"
+ },
+ {
+  "task_id": "cookEgg-10_gt_step_33_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on stove burner"
+  ],
+  "action": "toggle on stove burner",
+  "observation": [
+   "egg is inside robot gripper"
+  ],
+  "explanation": "The robot toggled on the fourth stove burner but put the pan on the first stove burner instead.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by action - put pot on third countertop before toggling on faucet, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "cookEgg-3_gt_step_47_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Put egg on first countertop",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "pan is inside robot gripper",
+   "pan (clean)"
+  ],
+  "explanation": "A potato is inside the pan at the beginning of the task execution, and the robot never removed it from the pan.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing actions to make pan empty, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "cookEgg-3_gt_step_60_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Put egg on first countertop",
+   "Pick up pan",
+   "Move to first stove burner",
+   "Put pan on first stove burner"
+  ],
+  "action": "put pan on first stove burner",
+  "observation": [
+   "nothing is inside robot gripper",
+   "first stove burner (turned on)",
+   "pan (clean)",
+   "pan is on top of first stove burner",
+   "potato is on top of first stove burner",
+   "pan is above stove knob",
+   "potato is on top of pan"
+  ],
+  "explanation": "A potato is inside the pan at the beginning of the task execution, and the robot never removed it from the pan.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by missing actions to make pan empty, explanation is supported by observations - potato on pan and pan on stove"
+ },
+ {
+  "task_id": "cookEgg-7_gt_step_1_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge"
+  ],
+  "action": "move to fridge",
+  "observation": [
+   "nothing is inside robot gripper",
+   "fridge (closed)"
+  ],
+  "explanation": "The robot never opened the fridge, as a result, it could not retrieve the egg from fridge.",
+  "label": "N",
+  "L_plan_exp": "N",
+  "L_obs_exp": "N",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "cookEgg-7_gt_step_14_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Move to egg",
+   "Pick up egg"
+  ],
+  "action": "pick up egg",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot never opened the fridge, as a result, it could not retrieve the egg from fridge.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing open fridge action in plan, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "cookEgg-7_pred_step_14_reflect_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Move to egg",
+   "Pick up egg"
+  ],
+  "action": "pick up egg",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "The robot failed to pick up the egg at 00:14 because it did not successfully open the fridge to access the egg. the failure was caused by the robot's inability to interact with the fridge to retrieve the egg.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by missing open fridge action, explanation is neutral to failure observation"
+ },
+ {
+  "task_id": "cookEgg-1_gt_step_35_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan"
+  ],
+  "action": "move to pan",
+  "observation": [
+   "nothing is inside robot gripper",
+   "pan (clean)",
+   "pan is on the left of salt shaker",
+   "pan is on the left of pepper shaker",
+   "pan is on the left of spatula",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "Dropped egg while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - empty gripper"
+ },
+ {
+  "task_id": "cookEgg-9_gt_step_44_gt_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "egg is inside robot gripper",
+   "pan (clean)",
+   "pan is on the left of salt shaker",
+   "pan is on the right of kettle",
+   "pan is on the left of pepper shaker",
+   "pan is on the left of spatula",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot did not put down the egg in its gripper before trying to pick up the pan.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by missing action to put down egg before picking up the pan, explanation is supported by egg inside gripper"
+ },
+ {
+  "task_id": "cookEgg-9_pred_step_44_reflect_exp",
+  "plan_until_failure": [
+   "Move to fridge",
+   "Open fridge",
+   "Pick up egg",
+   "Close fridge",
+   "Move to first stove burner",
+   "Toggle on first stove burner",
+   "Move to pan",
+   "Pick up pan"
+  ],
+  "action": "pick up pan",
+  "observation": [
+   "egg is inside robot gripper",
+   "pan (clean)",
+   "pan is on the left of salt shaker",
+   "pan is on the right of kettle",
+   "pan is on the left of pepper shaker",
+   "pan is on the left of spatula",
+   "pan is on top of first countertop"
+  ],
+  "explanation": "The robot failed to cook the egg because it did not crack the egg into the pan before picking it up at 00:44. This caused the failure as the egg was still intact and not cooked.",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "even though the explanation is incorrect (due to world model mismatch) it is supported by missing actions to crack egg, even though the explanation is incorrect (due to world model mismatch) it is supported by observations - pan (clean) and egg inside gripper"
+ },
+ {
+  "task_id": "switchDevices-8_gt_step_59_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand",
+   "Move to remote control",
+   "Pick up remote control",
+   "Move to television"
+  ],
+  "action": "move to television",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Dropped remotecontrol while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan because no action contradicts or entails a statement in explanation , explanation is supported by observation - empty gripper"
+ },
+ {
+  "task_id": "switchDevices-3_gt_step_47_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand",
+   "Open laptop"
+  ],
+  "action": "open laptop",
+  "observation": [
+   "nothing is inside robot gripper",
+   "laptop (open and turned off)",
+   "laptop is on the left of keychain",
+   "laptop is on the right of book",
+   "laptop is on top of tv stand"
+  ],
+  "explanation": "Wrong plan: opens the laptop again",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by actions - close laptop and later open laptop, explanation is supported by observation - laptop (open and turned off)"
+ },
+ {
+  "task_id": "switchDevices-10_gt_step_64_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand",
+   "Move to remote control",
+   "Move to television",
+   "Toggle on television"
+  ],
+  "action": "toggle on television",
+  "observation": [
+   "nothing is inside robot gripper",
+   "television (turned off)",
+   "television is on top of tv stand"
+  ],
+  "explanation": "Missing (pick_up, remotecontrol)",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported dby plan as tv cannot be turned on without picking up remote, explanation is neutral to failure explanation"
+ },
+ {
+  "task_id": "switchDevices-10_gt_step_64_reflect_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand",
+   "Move to remote control",
+   "Move to television",
+   "Toggle on television"
+  ],
+  "action": "toggle on television",
+  "observation": [
+   "nothing is inside robot gripper",
+   "television (turned off)",
+   "television is on top of tv stand"
+  ],
+  "explanation": "The robot failed to switch on the television at 01:04 because it did not perform the action to toggle on the television despite being in the correct position. the failure was caused by the robot not executing the final required action to complete the task.",
+  "label": "C",
+  "L_plan_exp": "C",
+  "L_obs_exp": "C",
+  "comment": "explanation contradicts action - toggle on television, explanation is contradictory due to world model mismatch - robot attempts to execute toggle on action but could not do it because precondition in_gripper(remote control) was unmet"
+ },
+ {
+  "task_id": "switchDevices-7_gt_step_41_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand"
+  ],
+  "action": "put laptop on tv stand",
+  "observation": [
+   "nothing is inside robot gripper",
+   "laptop (open and turned off)",
+   "laptop is on the left of keychain",
+   "laptop is on the right of book",
+   "laptop is on top of tv stand",
+   "television is on top of tv stand",
+   "tv stand is on the left of garbage can",
+   "watch is on top of tv stand",
+   "keychain is on top of tv stand",
+   "book is on top of tv stand"
+  ],
+  "explanation": "Missing step of close laptop",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by missing action - close laptop before putting on tv stand, explanation is supported by observation - laptop (open and turned off)"
+ },
+ {
+  "task_id": "switchDevices-4_gt_step_99_gt_exp",
+  "plan_until_failure": [
+   "Move to floor lamp",
+   "Toggle off floor lamp",
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to tv stand",
+   "Put laptop on tv stand",
+   "Move to remote control",
+   "Pick up remote control",
+   "Move to floor lamp",
+   "Toggle on floor lamp"
+  ],
+  "action": "toggle on floor lamp",
+  "observation": [
+   "remote control is inside robot gripper"
+  ],
+  "explanation": "Wrong plan: floorlamp turned on instead of television",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "N",
+  "comment": "explanation is supported by the last action in plan, explanation is neutral to failure observation as the state of floor lamp is not observed"
+ },
+ {
+  "task_id": "switchDevices-5_gt_step_48_gt_exp",
+  "plan_until_failure": [
+   "Move to laptop",
+   "Close laptop",
+   "Pick up laptop",
+   "Move to garbage can",
+   "Put laptop in garbage can"
+  ],
+  "action": "put laptop in garbage can",
+  "observation": [
+   "nothing is inside robot gripper",
+   "laptop (closed and turned off)",
+   "laptop is inside garbage can",
+   "garbage can is on the right of tv stand"
+  ],
+  "explanation": "Wrong plan: laptop is put in garbage can instead of tv stand",
+  "label": "E",
+  "L_plan_exp": "E",
+  "L_obs_exp": "E",
+  "comment": "explanation is supported by last action in plan, explanation is supported by observation - laptop inside garbage can"
+ },
+ {
+  "task_id": "boilWater-4_gt_step_26_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet"
+  ],
+  "action": "toggle on faucet",
+  "observation": [
+   "nothing is inside robot gripper",
+   "faucet (turned off)"
+  ],
+  "explanation": "The robot failed to toggle on faucet.",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - faucet (turned off)"
+ },
+ {
+  "task_id": "boilWater-1_gt_step_36_gt_exp",
+  "plan_until_failure": [
+   "Move to pot",
+   "Pick up pot",
+   "Move to sink",
+   "Put pot in sink",
+   "Toggle on faucet",
+   "Toggle off faucet",
+   "Pick up pot",
+   "Move to fourth stove burner"
+  ],
+  "action": "move to fourth stove burner",
+  "observation": [
+   "nothing is inside robot gripper"
+  ],
+  "explanation": "Dropped pot while moving",
+  "label": "E",
+  "L_plan_exp": "N",
+  "L_obs_exp": "E",
+  "comment": "explanation is neutral to plan, explanation is supported by observation - empty gripper"
+ }
+]
