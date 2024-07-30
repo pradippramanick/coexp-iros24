@@ -1,10 +1,10 @@
-﻿# A dataset for coherence classification of multimodal explanations
+# A dataset for coherence classification of multimodal explanations
 
 This dataset contains data used in the experiments described in the paper - Multimodal Coherent Explanation Generation of Robot Failures, Pradip Pramanick & Silvia Rossi, IROS 2024.
 There are two json files:  
   
 
- 1. RoboFail_generated_w_SRL (RF) - contains annotated explanations from the RoboFail dataset (Liu 2023) that are generated using GPT-3.5-turbo LLM, based on observations from Ai2Thor simulator.   
+ 1. RoboFail_generated_w_SRL (RF) - contains annotated explanations from the RoboFail dataset (https://github.com/real-stanford/reflect) that are generated using GPT-3.5-turbo LLM, based on observations from Ai2Thor simulator.   
  2. CounterFactual_generated (CF) - contains annotated explanations from counterfactual generation method in (Pramanick & Rossi 2024).
 
 # Fields in json
