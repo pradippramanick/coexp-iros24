@@ -24,6 +24,3 @@ There are two json files:
 
 > Please note the SRL model is imperfect and the predicate-argument predictions are only given as a reference. For this dataset, the correct labels are given, even for incorrect SRL predictions.  
 Also, no SRL for CF, as it is auto-labeled.
-
-We will soon release the code for the paper which will contains scripts to process this data.
-
